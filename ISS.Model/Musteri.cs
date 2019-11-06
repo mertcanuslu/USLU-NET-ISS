@@ -8,12 +8,14 @@ namespace ISS.Model
 {
     public class Musteri
     {
-        String ad, adres, paket, taahut,num;
+        String Musteri_ad, Musteri_mail, Musteri_sifre, Musteri_tel, Musteri_adres, Musteri_paket;
 
-        public string Ad { get => ad; set => ad = value; }
-        public string Adres { get => adres; set => adres = value; }
-        public string Paket { get => paket; set => paket = value; }
-        public string Taahut { get => taahut; set => taahut = value; }
-        public string Num { get => num; set => num = value; }
+
+        public string musteri_ad { get => Musteri_ad; set => Musteri_ad = value; }
+        public string musteri_mail { get => Musteri_mail; set => Musteri_mail = value; }
+        public string musteri_sifre { get => Musteri_sifre; set => Musteri_sifre = value; }
+        public string musteri_tel { get => Musteri_tel; set => Musteri_tel = value; }
+        public string musteri_adres { get => Musteri_adres; set => Musteri_adres = value; }
+        public string musteri_paket { get => Musteri_paket; set => Musteri_paket = value; }
     }
 }

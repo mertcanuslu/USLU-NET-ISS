@@ -1,4 +1,5 @@
 ﻿using ISS.BLL;
+using ISS.DAL;
 using ISS.Model;
 using System;
 using System.Collections.Generic;
@@ -15,9 +16,11 @@ namespace WindowsFormsApp3
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(Yonetici yoneten)
         {
+           
             InitializeComponent();
+            TXTYONETEN.Text = yoneten.saglayici_mail+'('+yoneten.saglayici_sirket+')';
         }
       
         
@@ -28,18 +31,20 @@ namespace WindowsFormsApp3
             var taahut = groupBox2.Controls.OfType<RadioButton>()
                                     .FirstOrDefault(r => r.Checked);
             Musteri mstr = new Musteri();
-            mstr.Ad = textBox1.Text;
-            mstr.Adres = textBox2.Text;
-            mstr.Num = maskedTextBox1.Text;
-            mstr.Paket = paket.Text;
-            mstr.Taahut = taahut.Text;
+            mstr.musteri_ad = textBox1.Text;
+            mstr.musteri_adres = textBox2.Text;
+            mstr.musteri_tel = maskedTextBox1.Text;
+            mstr.musteri_paket = paket.Text;
+            mstr.musteri_mail = "testmail";
+            mstr.musteri_sifre = "testsifre";
+
             OgrenciBLL bll = new OgrenciBLL();
             bll.Musteri_Ekle(mstr);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            Helper hlpme = new Helper();
         }
 
         private void button2_Click(object sender, EventArgs e)

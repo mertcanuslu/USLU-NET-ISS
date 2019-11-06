@@ -32,26 +32,24 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.TXTYONETEN = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.listPaket = new System.Windows.Forms.ListBox();
+            this.listTaahut = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
@@ -70,60 +68,13 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.listPaket);
             this.groupBox1.Location = new System.Drawing.Point(382, 1);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(204, 135);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Paketi";
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(58, 97);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(100, 17);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Yayıncı 100Mbit";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(58, 75);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(95, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Yüksek 32mbit";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(58, 52);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(79, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Orta 24mbit";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(58, 29);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(82, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Basit 12mbit";
-            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -164,10 +115,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton6);
-            this.groupBox2.Controls.Add(this.radioButton5);
-            this.groupBox2.Controls.Add(this.radioButton7);
-            this.groupBox2.Controls.Add(this.radioButton8);
+            this.groupBox2.Controls.Add(this.listTaahut);
             this.groupBox2.Location = new System.Drawing.Point(382, 142);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(204, 86);
@@ -175,57 +123,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Taahüt";
             // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(127, 52);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(44, 17);
-            this.radioButton6.TabIndex = 3;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Yok";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(127, 29);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(52, 17);
-            this.radioButton5.TabIndex = 2;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "36 Ay";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton7
-            // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(24, 52);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(52, 17);
-            this.radioButton7.TabIndex = 1;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "24 Ay";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            // 
-            // radioButton8
-            // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(24, 29);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(52, 17);
-            this.radioButton8.TabIndex = 0;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "12 Ay";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(0, 244);
+            this.button1.Location = new System.Drawing.Point(2, 234);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(586, 54);
             this.button1.TabIndex = 8;
@@ -247,7 +151,7 @@
             this.button2.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(0, 304);
+            this.button2.Location = new System.Drawing.Point(2, 294);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(586, 54);
             this.button2.TabIndex = 10;
@@ -261,7 +165,7 @@
             this.button3.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(2, 364);
+            this.button3.Location = new System.Drawing.Point(2, 354);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(586, 54);
             this.button3.TabIndex = 11;
@@ -269,12 +173,61 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.TXTYONETEN);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Location = new System.Drawing.Point(12, 414);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(569, 41);
+            this.groupBox3.TabIndex = 12;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Yönetici";
+            // 
+            // TXTYONETEN
+            // 
+            this.TXTYONETEN.AutoSize = true;
+            this.TXTYONETEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TXTYONETEN.ForeColor = System.Drawing.Color.Gold;
+            this.TXTYONETEN.Location = new System.Drawing.Point(248, 16);
+            this.TXTYONETEN.Name = "TXTYONETEN";
+            this.TXTYONETEN.Size = new System.Drawing.Size(11, 13);
+            this.TXTYONETEN.TabIndex = 1;
+            this.TXTYONETEN.Text = "-";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(102, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(140, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "ÇEVRİM İÇİ YÖNETİCİ:";
+            // 
+            // listPaket
+            // 
+            this.listPaket.FormattingEnabled = true;
+            this.listPaket.Location = new System.Drawing.Point(6, 19);
+            this.listPaket.Name = "listPaket";
+            this.listPaket.Size = new System.Drawing.Size(193, 108);
+            this.listPaket.TabIndex = 0;
+            // 
+            // listTaahut
+            // 
+            this.listTaahut.FormattingEnabled = true;
+            this.listTaahut.Location = new System.Drawing.Point(7, 19);
+            this.listTaahut.Name = "listTaahut";
+            this.listTaahut.Size = new System.Drawing.Size(192, 56);
+            this.listTaahut.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(589, 421);
+            this.ClientSize = new System.Drawing.Size(593, 467);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.maskedTextBox1);
@@ -294,10 +247,10 @@
             this.Text = "MERTNET PANEL";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,15 +268,12 @@
         private System.Windows.Forms.Button button3;
         public System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.RadioButton radioButton4;
-        public System.Windows.Forms.RadioButton radioButton3;
-        public System.Windows.Forms.RadioButton radioButton2;
-        public System.Windows.Forms.RadioButton radioButton1;
-        public System.Windows.Forms.RadioButton radioButton6;
-        public System.Windows.Forms.RadioButton radioButton5;
-        public System.Windows.Forms.RadioButton radioButton7;
-        public System.Windows.Forms.RadioButton radioButton8;
         public System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label TXTYONETEN;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox listPaket;
+        private System.Windows.Forms.ListBox listTaahut;
     }
 }
 

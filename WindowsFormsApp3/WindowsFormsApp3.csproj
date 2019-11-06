@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogInYetkili.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInYetkili.Designer.cs">
+      <DependentUpon>LogInYetkili.cs</DependentUpon>
+    </Compile>
     <Compile Include="MusteriAra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInYetkili.resx">
+      <DependentUpon>LogInYetkili.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MusteriAra.resx">
       <DependentUpon>MusteriAra.cs</DependentUpon>
@@ -101,6 +110,10 @@
     <ProjectReference Include="..\ISS.BLL\ISS.BLL.csproj">
       <Project>{DF535D65-D251-4501-92F3-FEBAD4E2A87A}</Project>
       <Name>ISS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISS.DAL\ISS.DAL.csproj">
+      <Project>{52D03310-FF01-4CDA-949F-B17FA1BB78D8}</Project>
+      <Name>ISS.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\ISS.Model\ISS.Model.csproj">
       <Project>{1144C21E-FE86-4E87-884D-0F7242E00B1B}</Project>

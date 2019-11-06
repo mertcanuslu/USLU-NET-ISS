@@ -3,6 +3,7 @@ using ISS.Model;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,15 +12,16 @@ namespace ISS.BLL
 {
     public class OgrenciBLL
     {
+
         public bool  Musteri_Ekle(Musteri mstr)
         {
             Helper hlp = new Helper();
+            
+            SqlParameter[] p = { new SqlParameter("@Ad", mstr.musteri_ad), new SqlParameter("@Mail", mstr.musteri_mail), new SqlParameter("@Sifre", mstr.musteri_sifre), new SqlParameter("@Tel", mstr.musteri_tel), new SqlParameter("@Adres", mstr.musteri_adres), new SqlParameter("@Paket", mstr.musteri_paket) };
 
+           
 
-            SqlParameter[] p = { new SqlParameter("@Ad", mstr.Ad), new SqlParameter("@Adres", mstr.Adres), new SqlParameter("@Numara", mstr.Num), new SqlParameter("@Paket", mstr.Paket), new SqlParameter("@Taahut", mstr.Taahut) };
-
-
-            return hlp.ExecuteNonQuery("INSERT into ttnetTablo values (@Ad,@Adres,@Paket,@Taahut,@Numara)",p) > 0 ;
+            return hlp.ExecuteNonQuery("INSERT into musteriler values (@Ad,@Mail,@Sifre,@Tel,@Adres,@Paket)",p) > 0 ;
         }
     }
 }
