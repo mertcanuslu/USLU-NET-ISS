@@ -13,14 +13,14 @@ namespace WindowsFormsApp3
 {
     public partial class MusteriAra : Form
     {
-        public Form1 form1;
+        public Anaform form1;
 
         public MusteriAra()
         {
             InitializeComponent();
         }
 
-        public MusteriAra(Form1 form1)
+        public MusteriAra(Anaform form1)
         {
             InitializeComponent();
             this.form1 = form1;

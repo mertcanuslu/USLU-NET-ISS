@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp3
 {
-    public partial class Form1 : Form
+    public partial class Anaform : Form
     {
-        public Form1(Yonetici yoneten)
+        public Anaform(Yonetici yoneten)
         {
            
             InitializeComponent();

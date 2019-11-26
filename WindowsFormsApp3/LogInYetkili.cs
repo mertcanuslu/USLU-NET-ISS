@@ -38,7 +38,7 @@ namespace WindowsFormsApp3
                         ynt.saglayici_sirket = dr[1].ToString();
                         ynt.saglayici_mail = dr[2].ToString().ToLower();
                         ynt.saglayici_sifre = dr[3].ToString().ToLower();
-                        Form1 frm1 = new Form1(ynt);
+                        Anaform frm1 = new Anaform(ynt);
                         frm1.Show();
                     }
                     else
