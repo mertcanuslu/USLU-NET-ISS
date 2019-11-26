@@ -13,7 +13,7 @@ namespace WindowsFormsApp3
 {
     public partial class MusteriAra : Form
     {
-        private Form1 form1;
+        public Form1 form1;
 
         public MusteriAra()
         {
@@ -41,45 +41,11 @@ namespace WindowsFormsApp3
             SqlDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-
+               
                 form1.textBox1.Text = dr[1].ToString();
                 form1.textBox2.Text = dr[2].ToString();
                 form1.maskedTextBox1.Text = dr[5].ToString();
-                switch (dr[3].ToString())
-                {
-                    case "Yayıncı 100Mbit":
-                        form1.radioButton4.Checked = true;
-                        break;
-                    case "Yüksek 32Mbit":
-                        form1.radioButton3.Checked = true;
-                        break;
-                    case "Orta 24Mbit":
-                        form1.radioButton2.Checked = true;
-                        break;
-                    case "Basit 12Mbit":
-                        form1.radioButton1.Checked = true;
-                        break;
-                    default:
-                        break;
-                }
-                switch (dr[4].ToString())
-                {
-                    case "12 Ay":
-                        form1.radioButton8.Checked = true;
-                        break;
-                    case "24 Ay":
-                        form1.radioButton7.Checked = true;
-                        break;
-                    case "36 Ay":
-                        form1.radioButton5.Checked = true;
-                        break;
-                    case "Yok":
-                        form1.radioButton6.Checked = true;
-                        break;
-                    default:
-                        break;
-                }
-
+      
                 // MessageBox.Show(dr[1].ToString() + dr[2].ToString() + dr[3].ToString() + dr[4].ToString() + dr[5].ToString());
             }
             else

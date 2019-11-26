@@ -44,8 +44,8 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.TXTYONETEN = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.listPaket = new System.Windows.Forms.ListBox();
-            this.listTaahut = new System.Windows.Forms.ListBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -54,24 +54,24 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(2, 103);
+            this.textBox1.Location = new System.Drawing.Point(2, 110);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(363, 20);
+            this.textBox1.Size = new System.Drawing.Size(374, 20);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(2, 156);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(363, 20);
+            this.textBox2.Size = new System.Drawing.Size(374, 20);
             this.textBox2.TabIndex = 1;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.listPaket);
-            this.groupBox1.Location = new System.Drawing.Point(382, 1);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Location = new System.Drawing.Point(384, 110);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(204, 135);
+            this.groupBox1.Size = new System.Drawing.Size(204, 50);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Paketi";
@@ -79,7 +79,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 87);
+            this.label1.Location = new System.Drawing.Point(2, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 4;
@@ -106,19 +106,19 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(2, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(374, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(593, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.listTaahut);
-            this.groupBox2.Location = new System.Drawing.Point(382, 142);
+            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Location = new System.Drawing.Point(384, 166);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(204, 86);
+            this.groupBox2.Size = new System.Drawing.Size(204, 50);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Taahüt";
@@ -142,7 +142,7 @@
             this.maskedTextBox1.Location = new System.Drawing.Point(2, 208);
             this.maskedTextBox1.Mask = "(999) 000-0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(363, 20);
+            this.maskedTextBox1.Size = new System.Drawing.Size(374, 20);
             this.maskedTextBox1.TabIndex = 9;
             // 
             // button2
@@ -205,21 +205,21 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "ÇEVRİM İÇİ YÖNETİCİ:";
             // 
-            // listPaket
+            // comboBox1
             // 
-            this.listPaket.FormattingEnabled = true;
-            this.listPaket.Location = new System.Drawing.Point(6, 19);
-            this.listPaket.Name = "listPaket";
-            this.listPaket.Size = new System.Drawing.Size(193, 108);
-            this.listPaket.TabIndex = 0;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(6, 19);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(193, 21);
+            this.comboBox1.TabIndex = 0;
             // 
-            // listTaahut
+            // comboBox2
             // 
-            this.listTaahut.FormattingEnabled = true;
-            this.listTaahut.Location = new System.Drawing.Point(7, 19);
-            this.listTaahut.Name = "listTaahut";
-            this.listTaahut.Size = new System.Drawing.Size(192, 56);
-            this.listTaahut.TabIndex = 0;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(6, 19);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(193, 21);
+            this.comboBox2.TabIndex = 0;
             // 
             // Form1
             // 
@@ -272,8 +272,8 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label TXTYONETEN;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox listPaket;
-        private System.Windows.Forms.ListBox listTaahut;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
 

@@ -45,6 +45,15 @@ namespace WindowsFormsApp3
         private void Form1_Load(object sender, EventArgs e)
         {
             Helper hlpme = new Helper();
+            PaketBLL paketx = new PaketBLL();
+            comboBox1.DisplayMember = "paketadi";
+            comboBox2.ValueMember = "paketid";
+            comboBox1.DataSource = paketx.PaketListele();
+
+            TaahutBLL taahutx = new TaahutBLL();
+            comboBox2.DisplayMember = "taahutbitis";
+            comboBox2.ValueMember = "taahutid";
+            comboBox2.DataSource = taahutx.TaahutListele();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -58,7 +67,15 @@ namespace WindowsFormsApp3
             MusteriAra mara = new MusteriAra(this);
             mara.Show();
         }
-
+        void Clean()
+        {
+            foreach (TextBox item in this.Controls)
+            {
+              
+                    item.Text = string.Empty;
+                
+            }
+        }
        
     }
 }

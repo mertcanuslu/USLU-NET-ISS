@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Musteri.cs" />
+    <Compile Include="Paket.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Taahut.cs" />
     <Compile Include="Yonetici.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

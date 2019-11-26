@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace ISS.DAL
 {
+
     public class Helper:IDisposable
     {
         SqlConnection cn = null;
@@ -23,7 +24,20 @@ namespace ISS.DAL
             Baglan(cn);
             return cmd.ExecuteNonQuery();
         }
-        public void TalepList()
+        public SqlDataReader ExecuteReader(String cmdtext,SqlParameter[] p)
+        {
+            cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cstr"].ConnectionString);
+
+            SqlCommand cmd = new SqlCommand(cmdtext, cn);
+            if(p != null)
+            {
+                cmd.Parameters.AddRange(p);
+            }
+            Baglan(cn);
+
+            return cmd.ExecuteReader();
+        }
+        public void Reader()
         {
              
             SqlConnection cn = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=ntpdatabase;Integrated Security=true");
@@ -36,11 +50,7 @@ namespace ISS.DAL
                 {
                     while (dr.Read())
                     {
-                        listBox1.Items.Add(dr[1].ToString());
-                        listBox2.Items.Add(dr[2].ToString());
-                        listBox3.Items.Add(dr[3].ToString());
-                        listBox4.Items.Add(dr[4].ToString());
-                        listBox5.Items.Add(dr[5].ToString());
+                        // burda listboxlar vardı
                     }
                 }
             }

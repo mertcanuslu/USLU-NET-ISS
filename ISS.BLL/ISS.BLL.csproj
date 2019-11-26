@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OgrenciBLL.cs" />
+    <Compile Include="PaketBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaahutBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ISS.DAL\ISS.DAL.csproj">
